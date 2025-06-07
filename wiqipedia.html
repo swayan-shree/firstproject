@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mahendra Singh Dhoni - Wikipedia Style</title>
+    <style>
+        /* Reset and base */
+        body {
+            margin: 0;
+            background-color: #eaecf0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: #202122;
+        }
+
+        /* Container centered */
+        #content {
+            max-width: 980px;
+            margin: 20px auto 40px auto;
+            background: white;
+            padding: 1.5em 2em;
+            box-shadow: 0 0 5px #aaa;
+        }
+
+        /* Top area: logo left, search right */
+        #topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 0;
+            border-bottom: 1px solid #a2a9b1;
+        }
+
+        #topbar #logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            cursor: pointer;
+            text-decoration: none;
+            color: #0645ad;
+        }
+
+        #topbar #logo img {
+            height: 50px;
+        }
+
+        #topbar #logo span {
+            font-size: 2.5rem;
+            font-weight: 700;
+            user-select: none;
+        }
+
+        #searchform {
+            display: flex;
+            align-items: center;
+        }
+
+        #searchform input[type="text"] {
+            font-size: 1rem;
+            padding: 6px 8px;
+            border: 1px solid #a2a9b1;
+            border-radius: 2px 0 0 2px;
+            outline: none;
+        }
+
+        #searchform input[type="submit"] {
+            font-size: 1rem;
+            padding: 6px 12px;
+            border: 1px solid #a2a9b1;
+            border-left: none;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            border-radius: 0 2px 2px 0;
+        }
+
+        #searchform input[type="submit"]:hover {
+            background-color: #e1e1e1;
+        }
+
+        /* Title */
+        #firstHeading {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin: 1em 0 0.3em 0;
+        }
+
+        /* Infobox right side */
+        #infobox {
+            float: right;
+            width: 280px;
+            margin-left: 1.5em;
+            background: #f9f9f9;
+            border: 1px solid #a2a9b1;
+            padding: 0.8em;
+            font-size: 0.9rem;
+            color: #202122;
+        }
+
+        #infobox img {
+            width: 100%;
+            border: 1px solid #a2a9b1;
+            margin-bottom: 0.8em;
+        }
+
+        #infobox b {
+            color: #0645ad;
+        }
+
+        /* Body content */
+        #bodyContent {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        #bodyContent p {
+            margin-top: 0;
+        }
+
+        /* Section headings */
+        h2 {
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 6px;
+            margin-top: 2em;
+            font-size: 1.6rem;
+            color: #0645ad;
+        }
+
+        ul {
+            margin-top: 0.3em;
+        }
+
+        ul li {
+            margin-bottom: 0.4em;
+        }
+
+        /* Clear floats */
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="content">
+
+        <!-- Top bar with Wikipedia style logo and search -->
+        <div id="topbar">
+            <a href="#" id="logo" title="Go to Wikipedia homepage">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Wikipedia-logo.png/50px-Wikipedia-logo.png"
+                    alt="Wikipedia logo" />
+                <span>Wikipedia</span>
+            </a>
+
+            <form id="searchform" action="#" method="get">
+                <input type="text" name="search" placeholder="Search Wikipedia" />
+                <input type="submit" value="Search" />
+            </form>
+        </div>
+
+        <!-- Page heading -->
+        <h1 id="firstHeading">Mahendra Singh Dhoni</h1>
+
+        <!-- Infobox -->
+        <div id="infobox">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Mahendra_Singh_Dhoni_2016.jpg"
+                alt="MS Dhoni" />
+            <p><b>Born:</b> July 7, 1981</p>
+            <p><b>Role:</b> Wicket-keeper batsman</p>
+            <p><b>Nationality:</b> Indian</p>
+            <p><b>Teams:</b> India, Chennai Super Kings</p>
+            <p><b>Nickname:</b> Captain Cool</p>
+        </div>
+
+        <!-- Main content -->
+        <div id="bodyContent">
+            <p>Mahendra Singh Dhoni, popularly known as MS Dhoni, is a former Indian international cricketer and captain
+                of the Indian national team. Born in Ranchi, Jharkhand, he is renowned for his calm temperament and
+                sharp cricketing acumen.</p>
+
+            <h2>Career Highlights</h2>
+            <ul>
+                <li>Led India to victory in the ICC T20 World Cup in 2007.</li>
+                <li>Captain of the Indian team that won the ICC Cricket World Cup in 2011.</li>
+                <li>Won the ICC Champions Trophy in 2013.</li>
+                <li>Known for his finishing ability and wicketkeeping skills.</li>
+            </ul>
+
+            <h2>Personal Life</h2>
+            <p>Dhoni is married to Sakshi Singh Rawat and is a fitness enthusiast. Outside cricket, he is involved in
+                various business ventures and owns sports teams.</p>
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+
+</body>
+
+</html>
